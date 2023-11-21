@@ -139,7 +139,7 @@
                 </div>
                 <div class="article-item-date">26 December,2022</div>
               </div>
-              <router-link to="/interno-vuecli/blog/details"
+              <router-link to="/blog/details"
                 ><button class="article-item-button">
                   <img
                     src="../assets/img/follow-button.png"
@@ -163,7 +163,7 @@
                 </div>
                 <div class="article-item-date">22 December,2022</div>
               </div>
-              <router-link to="/interno-vuecli/blog/details"
+              <router-link to="/blog/details"
                 ><button class="article-item-button">
                   <img
                     src="../assets/img/follow-button.png"
@@ -187,7 +187,7 @@
                 </div>
                 <div class="article-item-date">25 December,2022</div>
               </div>
-              <router-link to="/interno-vuecli/blog/details"
+              <router-link to="/blog/details"
                 ><button class="article-item-button">
                   <img
                     src="../assets/img/follow-button.png"
