@@ -88,7 +88,7 @@ export default {
       articles: [
         {
           title: "Let’s Get Solution for Building Construction Work",
-          imgUrl: "blog-post1.png",
+          imgUrl: "blog-post1.jpg",
           date: "26 December,2022",
           tag: "Kitchen",
           text: `Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable. \n Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.`,

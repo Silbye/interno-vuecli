@@ -73,7 +73,7 @@ a {
 }
 
 .promotion .container {
-    background-image: url(../img/promotion.png);
+    background-image: url(../img/promotion.jpg);
     height: 758px;
     display: flex;
     align-items: center;
@@ -535,7 +535,7 @@ a {
 }
 
 .details-big {
-    background-image: url(../img/details-banner.png);
+    background-image: url(../img/details-banner.jpg);
 }
 
 .blog-posts {

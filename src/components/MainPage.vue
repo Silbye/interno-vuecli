@@ -38,7 +38,7 @@
         </div>
         <div class="follow-items">
           <div class="follow-item">
-            <img src="../assets/img/follow-1.png" alt="" class="follow-image" />
+            <img src="../assets/img/follow-1.jpg" alt="" class="follow-image" />
             <div class="follow-item-info">
               <div class="follow-item-left">
                 <div class="follow-item-title">Modern Kitchan</div>
@@ -66,7 +66,7 @@
             </div>
           </div>
           <div class="follow-item">
-            <img src="../assets/img/follow-3.png" alt="" class="follow-image" />
+            <img src="../assets/img/follow-3.jpg" alt="" class="follow-image" />
             <div class="follow-item-info">
               <div class="follow-item-left">
                 <div class="follow-item-title">Modern Kitchan</div>
@@ -80,7 +80,7 @@
             </div>
           </div>
           <div class="follow-item">
-            <img src="../assets/img/follow-4.png" alt="" class="follow-image" />
+            <img src="../assets/img/follow-4.jpg" alt="" class="follow-image" />
             <div class="follow-item-info">
               <div class="follow-item-left">
                 <div class="follow-item-title">Modern Kitchan</div>
