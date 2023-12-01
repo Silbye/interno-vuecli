@@ -26,7 +26,7 @@
               classica.
             </div>
             <div class="latest-post-date">26 December,2022</div>
-            <router-link to="/blog/details">
+            <router-link to="/Blog/Details">
               <button class="latest-post-button">
                 <img src="../assets/img/follow-button.png" alt="" />
               </button>
@@ -51,7 +51,7 @@
                 <div class="article-item-title">{{ item.title }}</div>
                 <div class="article-item-date">{{ item.date }}</div>
               </div>
-              <router-link to="/blog/details"
+              <router-link to="/Blog/Details"
                 ><button class="article-item-button">
                   <img
                     src="../assets/img/follow-button.png"

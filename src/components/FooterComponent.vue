@@ -2,7 +2,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-left">
-        <img src="../assets/img/Logo.png" alt="" class="header-logo" />
+        <router-link to="/"
+          ><img src="../assets/img/Logo.png" alt="" class="header-logo"
+        /></router-link>
         <div class="footer-left-text">
           It is a long established fact that a reader will be distracted
           lookings.
@@ -39,10 +41,10 @@
         <router-link to="/" class="footer-middle-item header-link"
           >Home</router-link
         >
-        <router-link to="/" class="footer-middle-item header-link"
+        <router-link to="/Project" class="footer-middle-item header-link"
           >Project</router-link
         >
-        <router-link to="/blog" class="footer-middle-item header-link"
+        <router-link to="/Blog" class="footer-middle-item header-link"
           >Blog</router-link
         >
       </div>

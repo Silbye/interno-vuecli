@@ -4,6 +4,7 @@ import MainPage from "../components/MainPage.vue";
 import BlogDetails from "../components/BlogDetails.vue";
 import BlogPosts from "../components/BlogPosts.vue";
 import ProjectPage from "../components/ProjectPage.vue";
+import ProjectDetails from "../components/ProjectDetails.vue";
 
 Vue.use(VueRouter);
 
@@ -14,19 +15,25 @@ const routes = [
     component: MainPage,
   },
   {
-    path: "/blog",
+    path: "/Blog",
     name: "blog",
     component: BlogPosts,
   },
   {
-    path: "/blog/details",
+    path: "/Blog/Details",
     name: "blogdetails",
     component: BlogDetails,
   },
   {
-    path: "/project",
+    path: "/Project",
     name: "project",
     component: ProjectPage,
+  },
+  {
+    path: "/Project/Details",
+    name: "projectdetails",
+    component: ProjectDetails,
+    props: true,
   },
   {
     path: "/:pathName(.*)",
