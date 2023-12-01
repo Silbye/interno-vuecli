@@ -1,0 +1,80 @@
+.project-details-big {
+    background-image: url("../img/Category/Banner.png");
+}
+
+.project-details-main {
+    margin: 200px 0;
+}
+
+.project-details-main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-details-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-details-title {
+    font-family: "DM", sans-serif;
+    font-size: 50px;
+    margin-bottom: 11px;
+}
+
+.project-details-text {
+    font-size: 22px;
+    color: #4d5053;
+    max-width: 658px;
+    margin-bottom: 100px;
+}
+
+.project-details-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-fade-enter-active {
+    transition: all 0.25s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.25s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.slider-image-frame {
+    position: relative;
+}
+
+.zoom-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.slider-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    margin-top: 20px;
+}
+
+.slider-image-button {
+    background: none;
+    cursor: pointer;
+}
+
+.active-slider-image {
+    fill: #000;
+}
