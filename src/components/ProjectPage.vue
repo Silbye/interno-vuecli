@@ -53,7 +53,7 @@
           </button>
         </div>
         <div
-          v-for="(category, index) in filteredList"
+          v-for="(category, index) in pageDisplay(filteredList)"
           :key="index"
           class="category-items"
         >
@@ -67,26 +67,37 @@
           ></ProjectItem>
         </div>
         <div class="category-pages articles-pages">
-          <div class="article-page">01</div>
-          <div class="article-page">02</div>
-          <div class="article-page">03</div>
-          <div class="article-page">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="9"
-              height="16"
-              viewBox="0 0 9 16"
-              fill="none"
-            >
-              <path
-                d="M1.55714 15L7.5 8.31429L1.55714 1.62857"
-                stroke="#292F36"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
+          <button class="article-page" @click="prevPage">{{ "<" }}</button>
+          <button
+            class="article-page"
+            v-if="currentPage - 2 >= 1"
+            @click="changePage(currentPage - 2)"
+          >
+            {{ currentPage - 2 }}
+          </button>
+          <button
+            class="article-page"
+            v-if="currentPage - 1 >= 1"
+            @click="changePage(currentPage - 1)"
+          >
+            {{ currentPage - 1 }}
+          </button>
+          <button class="article-page">{{ currentPage }}</button>
+          <button
+            class="article-page"
+            v-if="currentPage + 1 <= calcPages"
+            @click="changePage(currentPage + 1)"
+          >
+            {{ currentPage + 1 }}
+          </button>
+          <button
+            class="article-page"
+            v-if="currentPage + 2 <= calcPages"
+            @click="changePage(currentPage + 2)"
+          >
+            {{ currentPage + 2 }}
+          </button>
+          <button class="article-page" @click="nextPage">{{ ">" }}</button>
         </div>
       </div>
     </div>
@@ -188,6 +199,7 @@ export default {
           ],
         },
       ],
+      currentPage: 1,
     };
   },
   methods: {
@@ -203,12 +215,34 @@ export default {
     toggleLike(item) {
       item.liked = !item.liked;
     },
+    pageDisplay(items) {
+      const startIndex = (this.currentPage - 1) * 10;
+      const endIndex = startIndex + 10;
+      return items.slice(startIndex, endIndex);
+    },
+    changePage(n) {
+      this.currentPage = n;
+    },
+    prevPage() {
+      if (this.currentPage !== 1) {
+        this.currentPage--;
+      }
+    },
+    nextPage() {
+      if (this.currentPage !== this.calcPages) {
+        this.currentPage++;
+      }
+    },
   },
   computed: {
     filteredList() {
       return this.categories.filter((category) =>
         category.name.includes(this.activeCategory)
       );
+    },
+    calcPages() {
+      const totalPages = Math.ceil(this.filteredList.length / 10);
+      return totalPages;
     },
   },
   components: { ProjectItem },

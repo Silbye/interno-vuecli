@@ -29,73 +29,7 @@
         </div>
       </div>
     </div>
-    <div class="follow-us">
-      <div class="container">
-        <div class="follow-title">Follow Our Projects</div>
-        <div class="follow-text">
-          It is a long established fact that a reader will be distracted by the
-          of readable content of page lookings at its layouts points.
-        </div>
-        <div class="follow-items">
-          <div class="follow-item">
-            <img src="../assets/img/follow-1.jpg" alt="" class="follow-image" />
-            <div class="follow-item-info">
-              <div class="follow-item-left">
-                <div class="follow-item-title">Modern Kitchan</div>
-                <div class="follow-item-text">Decor / Artchitecture</div>
-              </div>
-              <div class="follow-item-right">
-                <button class="follow-item-button">
-                  <img src="../assets/img/follow-button.png" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="follow-item">
-            <img src="../assets/img/follow-2.png" alt="" class="follow-image" />
-            <div class="follow-item-info">
-              <div class="follow-item-left">
-                <div class="follow-item-title">Modern Kitchan</div>
-                <div class="follow-item-text">Decor / Artchitecture</div>
-              </div>
-              <div class="follow-item-right">
-                <button class="follow-item-button">
-                  <img src="../assets/img/follow-button.png" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="follow-item">
-            <img src="../assets/img/follow-3.jpg" alt="" class="follow-image" />
-            <div class="follow-item-info">
-              <div class="follow-item-left">
-                <div class="follow-item-title">Modern Kitchan</div>
-                <div class="follow-item-text">Decor / Artchitecture</div>
-              </div>
-              <div class="follow-item-right">
-                <button class="follow-item-button">
-                  <img src="../assets/img/follow-button.png" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="follow-item">
-            <img src="../assets/img/follow-4.jpg" alt="" class="follow-image" />
-            <div class="follow-item-info">
-              <div class="follow-item-left">
-                <div class="follow-item-title">Modern Kitchan</div>
-                <div class="follow-item-text">Decor / Artchitecture</div>
-              </div>
-              <div class="follow-item-right">
-                <button class="follow-item-button">
-                  <img src="../assets/img/follow-button.png" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <FollowProjects />
     <div class="projects-info">
       <div class="container">
         <div class="project-info project-info-box">
@@ -116,95 +50,18 @@
         </div>
       </div>
     </div>
-    <div class="articles">
-      <div class="container">
-        <div class="articles-title">Articles & News</div>
-        <div class="articles-text">
-          It is a long established fact that a reader will be distracted by the
-          of readable content of a page when lookings at its layouts the points
-          of using.
-        </div>
-        <div class="articles-items">
-          <div class="article-item">
-            <img
-              src="../assets/img/article-1.png"
-              alt=""
-              class="article-item-image"
-            />
-            <div class="article-image-box">Kitchan Design</div>
-            <div class="article-item-box">
-              <div class="article-item-info">
-                <div class="article-item-title">
-                  Let’s Get Solution For Building Construction Work
-                </div>
-                <div class="article-item-date">26 December,2022</div>
-              </div>
-              <router-link to="/blog/details"
-                ><button class="article-item-button">
-                  <img
-                    src="../assets/img/follow-button.png"
-                    alt=""
-                    class="article-item-button-image"
-                  /></button
-              ></router-link>
-            </div>
-          </div>
-          <div class="article-item">
-            <img
-              src="../assets/img/article-2.png"
-              alt=""
-              class="article-item-image"
-            />
-            <div class="article-image-box">Living Design</div>
-            <div class="article-item-box">
-              <div class="article-item-info">
-                <div class="article-item-title">
-                  Low Cost Latest Invented Interior Designing Ideas.
-                </div>
-                <div class="article-item-date">22 December,2022</div>
-              </div>
-              <router-link to="/blog/details"
-                ><button class="article-item-button">
-                  <img
-                    src="../assets/img/follow-button.png"
-                    alt=""
-                    class="article-item-button-image"
-                  /></button
-              ></router-link>
-            </div>
-          </div>
-          <div class="article-item">
-            <img
-              src="../assets/img/article-3.png"
-              alt=""
-              class="article-item-image"
-            />
-            <div class="article-image-box">Interior Design</div>
-            <div class="article-item-box">
-              <div class="article-item-info">
-                <div class="article-item-title">
-                  Best For Any Office & Business Interior Solution
-                </div>
-                <div class="article-item-date">25 December,2022</div>
-              </div>
-              <router-link to="/blog/details"
-                ><button class="article-item-button">
-                  <img
-                    src="../assets/img/follow-button.png"
-                    alt=""
-                    class="article-item-button-image"
-                  /></button
-              ></router-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <ArticlesNews />
   </div>
 </template>
 
 <script>
+import FollowProjects from "./FollowProjects.vue";
+import ArticlesNews from "./ArticlesNews.vue";
 export default {
   name: "MainPage",
+  components: {
+    FollowProjects,
+    ArticlesNews,
+  },
 };
 </script>

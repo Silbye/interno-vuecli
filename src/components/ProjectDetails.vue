@@ -16,8 +16,12 @@
               v-for="i in [currentIndex]"
               :key="i"
             >
-              <img :src="require(`@/assets/img/Category/${currentImg}`)" />
+              <img
+                :class="isZoomed ? `zoomed` : ``"
+                :src="require(`@/assets/img/Category/${currentImg}`)"
+              />
               <svg
+                @click="toggleZoom()"
                 class="zoom-icon"
                 width="172"
                 height="172"
@@ -110,11 +114,15 @@ export default {
     return {
       images: ["Image.png", "Image.png", "Image.png"],
       currentIndex: 0,
+      isZoomed: false,
     };
   },
   methods: {
     imageIndex(index) {
       this.currentIndex = index;
+    },
+    toggleZoom() {
+      this.isZoomed = !this.isZoomed;
     },
   },
   computed: {
